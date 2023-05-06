@@ -90,12 +90,59 @@ const theatre4 = {
   text: 'Что-то ещё крутое в мире театра'
 }
 
+const tech1 = {
+  year: 1980,
+  text: '13 сентября — частное солнечное затмение, видимое в Южной Африке и части Антарктиды'
+}
+const tech2 = {
+  year: 1982,
+  text: 'Телескоп «Хаббл» обнаружил самую удалённую из всех обнаруженных галактик, получившую обозначение GN-z11'
+}
+const tech3 = {
+  year: 1984,
+  text: 'Компания Tesla официально представила первый в мире электрический грузовик Tesla Semi'
+}
+const tech4 = {
+  year: 1986,
+  text: 'Старт космического аппарата Solar Probe Plus, предназначенного для изучения Солнца'
+}
+
+const sport1 = {
+  year: 2006,
+  text: 'Премьера балета «Золушка» в постановке Жан-Кристофа Майо, сценография Эрнеста Пиньона'
+}
+const sport2 = {
+  year: 2007,
+  text: 'Возобновлено издание журнала «Театр».'
+}
+const sport3 = {
+  year: 2009,
+  text: 'Премьера трилогии Тома Стоппарда «Берег Утопии», Королевский Национальный театр, Лондон'
+}
+const sport4 = {
+  year: 2011,
+  text: 'Что-то ещё крутое в мире театра'
+}
+const sport5 = {
+  year: 2012,
+  text: 'Что-то ещё крутое в мире театра'
+}
+const sport6 = {
+  year: 2014,
+  text: 'Что-то ещё крутое в мире театра'
+}
 
 const scienceGroup: IHistoricDateGroup = {
   title: 'Наука',
   from: 2015,
   to: 2022,
   dates: [science1, science2, science3, science4, science5, science6]
+};
+const techGroup: IHistoricDateGroup = {
+  title: 'Технологии',
+  from: 1980,
+  to: 1986,
+  dates: [tech1, tech2, tech3, tech4]
 };
 const literatureGroup: IHistoricDateGroup = {
   title: 'Литература',
@@ -115,7 +162,13 @@ const theatreGroup: IHistoricDateGroup = {
   to: 2004,
   dates: [theatre1, theatre2, theatre3, theatre4]
 };
+const sportGroup: IHistoricDateGroup = {
+  title: 'Спорт',
+  from: 2006,
+  to: 2014,
+  dates: [sport1, sport2, sport3, sport4, sport5, sport6]
+};
 
 
 
-export const datesGroups: IHistoricDateGroup[] = [scienceGroup, cinemaGroup, scienceGroup, literatureGroup, cinemaGroup, theatreGroup];
+export const datesGroups: IHistoricDateGroup[] = [techGroup, cinemaGroup, literatureGroup, theatreGroup, sportGroup, scienceGroup];
