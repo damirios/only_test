@@ -14,7 +14,7 @@ const CircleNavItem = ({title, index, itemsAmount, activeIndex, isActive, setAct
 
   const [width, height] = useWindowSize();
 
-  const circleRadius = width < 768 ? width < 600 ? 300 / 2 : 400 / 2 : 530 / 2;
+  const circleRadius = width <= 768 ? width <= 600 ? 300 / 2 : 400 / 2 : 530 / 2;
   const itemRadius = 56 / 2;
 
   const xshift = (circleRadius) * Math.cos(2 * Math.PI * (-index + 1) / itemsAmount) - 1;
