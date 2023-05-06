@@ -212,7 +212,7 @@ body {
 @media (max-width: 480px) {
   .controls {
     display: grid;
-    grid-template-columns: 60px auto;
+    grid-template-columns: 60px auto 60px;
     column-gap: 40px;
     row-gap: 10px;
     margin-top: auto;
@@ -512,6 +512,7 @@ body {
 .pagination {
   display: flex;
   align-items: center;
+  justify-content: center;
   column-gap: 10px;
   grid-area: 2/2/3/3;
 }
